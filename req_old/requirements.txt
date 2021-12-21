@@ -1,0 +1,6 @@
+black
+green
+pytest
+tox
+tox-pyenv
+flake8
