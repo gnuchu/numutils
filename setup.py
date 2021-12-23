@@ -40,6 +40,6 @@ setup(
     package_data={'numutils': ['config/*.yaml']},
     test_suite='tests',
     url='https://github.com/gnuchu/numutils.n2w',
-    version = '0.1.1',
+    version = '0.1.2',
     zip_safe=False,
 )
