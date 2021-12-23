@@ -37,9 +37,9 @@ setup(
     keywords='n2w',
     name='numutils.n2w',
     packages=find_packages(include=['numutils', 'numutils']),
-    package_data={'numutils': ['config/**/*.yaml']},
+    package_data={'numutils': ['config/*.yaml']},
     test_suite='tests',
     url='https://github.com/gnuchu/numutils.n2w',
-    version = 'version = 'version = '0.1.1''',
+    version = '0.1.1',
     zip_safe=False,
 )
