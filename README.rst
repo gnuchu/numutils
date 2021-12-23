@@ -13,7 +13,7 @@ Usage
 
 ::
 
-   from numutils-n2w import n2w
+   from numutils import n2w
 
    n = n2w(1023)
    n.words()
