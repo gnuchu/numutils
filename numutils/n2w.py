@@ -5,6 +5,7 @@ import yaml
 
 DEBUG_LEVEL = logging.INFO
 
+
 class n2w:
     def __init__(self, n, lang="en"):
         self.number = n
