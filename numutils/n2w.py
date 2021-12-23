@@ -2,7 +2,6 @@ from os.path import exists
 import logging
 from os import path
 import yaml
-from yaml.loader import FullLoader
 
 DEBUG_LEVEL = logging.INFO
 
@@ -132,5 +131,5 @@ class n2w:
 
     with open(path_to_file, "r") as f:
       data = yaml.load(f, Loader=yaml.FullLoader)
-    
+
     return data

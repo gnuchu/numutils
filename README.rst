@@ -3,7 +3,7 @@ numutils.n2w
 ===
 
 
-numutils-n2w - Numbers to Words
+numutils.n2w - Numbers to Words
 ======================
 
 A python package to convert a number to words.
@@ -25,7 +25,6 @@ will output
    one thousand and twenty three
 
 * Free software: MIT license
-* Documentation: https://n2w.readthedocs.io.
 
 
 Features
