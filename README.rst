@@ -3,25 +3,26 @@ numutils.n2w
 ===
 
 
-.. image:: https://img.shields.io/pypi/v/n2w.svg
-        :target: https://pypi.python.org/pypi/n2w
+numutils-n2w - Numbers to Words
+======================
 
-.. image:: https://img.shields.io/travis/gnuchu/n2w.svg
-        :target: https://travis-ci.com/gnuchu/n2w
+A python package to convert a number to words.
 
-.. image:: https://readthedocs.org/projects/n2w/badge/?version=latest
-        :target: https://n2w.readthedocs.io/en/latest/?version=latest
-        :alt: Documentation Status
+Usage
+-----
 
+::
 
-.. image:: https://pyup.io/repos/github/gnuchu/n2w/shield.svg
-     :target: https://pyup.io/repos/github/gnuchu/n2w/
-     :alt: Updates
+   from numutils-n2w import n2w
 
+   n = n2w(1023)
+   n.words()
 
+will output
 
-helper library that converts numbers to words
+::
 
+   one thousand and twenty three
 
 * Free software: MIT license
 * Documentation: https://n2w.readthedocs.io.

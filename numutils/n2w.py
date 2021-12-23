@@ -1,7 +1,8 @@
-from genericpath import exists
+from os.path import exists
 import logging
 from os import path
-import json
+import yaml
+from yaml.loader import FullLoader
 
 DEBUG_LEVEL = logging.INFO
 
@@ -124,12 +125,12 @@ class n2w:
       return tens + ' ' + units
 
   def __data(self, lang="en"):
-    path_to_file = path.join(path.dirname(__file__), f"config/{lang}.json")
+    path_to_file = path.join(path.dirname(__file__), f"config/{lang}.yaml")
     if not exists(path_to_file):
       raise ValueError(f"Language '{lang}' not yet supported. Can't find \
         configuration file at {path_to_file}")
 
     with open(path_to_file, "r") as f:
-      data = f.read()
-    j = json.loads(data)
-    return j
+      data = yaml.load(f, Loader=yaml.FullLoader)
+    
+    return data
