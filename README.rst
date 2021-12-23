@@ -1,9 +1,9 @@
-===
-numutils.n2w
-===
+########
+numutils
+########
 
 
-numutils.n2w - Numbers to Words
+n2w - Numbers to Words
 ======================
 
 A python package to convert a number to words.

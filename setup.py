@@ -32,6 +32,7 @@ setup(
     install_requires=requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,
+    long_description_content_type='text/x-rst',
     include_package_data=True,
     keywords='n2w',
     name='numutils.n2w',
@@ -39,6 +40,6 @@ setup(
     package_data={'numutils': ['config/**/*.yaml']},
     test_suite='tests',
     url='https://github.com/gnuchu/numutils.n2w',
-    version='{current_version}',
+    version='0.1.0',
     zip_safe=False,
 )
