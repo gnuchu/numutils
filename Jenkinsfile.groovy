@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Test') {
+    stage('Run Tests') {
       steps {
         script {
-          echo "Hello, World!"
+          sh 'make test'
         }
       }
     }
