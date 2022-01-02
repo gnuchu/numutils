@@ -4,7 +4,10 @@ pipeline {
     stage('Run Tests') {
       steps {
         script {
-          sh 'make test'
+          withPythonEnv('/usr/bin/python3') {
+            sh 'pip install -r requirements.txt'
+            sh 'make test'
+          }
         }
       }
     }
