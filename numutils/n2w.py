@@ -8,10 +8,21 @@ DEBUG_LEVEL = logging.INFO
 
 class n2w:
     def __init__(self, n, lang="en"):
+
         self.number = n
         self.data = self.__data(lang=lang)
         self.conjunction = self.data["conjunction"]
 
+        @property
+        def number(self):
+            return self._number
+        
+        @number.setter
+        def number(self, n):
+            if not isinstance(n, int): raise Exception("Value must be an int")
+            self._number = n
+        
+        # Logging
         self.logger = logging.getLogger()
         self.logger.setLevel(level=DEBUG_LEVEL)
         handler = logging.StreamHandler()
