@@ -4,9 +4,15 @@ pipeline {
     stage('Run Tests') {
       steps {
         script {
-          withPythonEnv('/usr/bin/python3') {
+          withPythonEnv('/usr/bin/python3.8') {
             sh 'pip install -r requirements.txt'
             sh 'make test'
+            sh 'mske lint'
+          }
+          withPythonEnv('/usr/bin/python3.9') {
+            sh 'pip install -r requirements.txt'
+            sh 'make test'
+            sh 'make lint'
           }
         }
       }
