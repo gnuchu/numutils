@@ -58,8 +58,8 @@ test: ## run tests quickly with the default Python
 	green
 
 test-all: ## run tests on every Python version with tox
-	pyenv local 3.10.0 3.7.12 3.8.12 3.9.9
-	tox
+	$(HOME)/.pyenv/bin/pyenv local 3.10.0 3.7.12 3.8.12 3.9.9
+	$(HOME)/.pyenv/shims/tox
 
 coverage: ## check code coverage quickly with the default Python
 	coverage run --source numutils -m pytest

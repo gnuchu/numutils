@@ -16,12 +16,13 @@ class n2w:
         @property
         def number(self):
             return self._number
-        
+
         @number.setter
         def number(self, n):
-            if not isinstance(n, int): raise Exception("Value must be an int")
+            if not isinstance(n, int):
+                raise Exception("Value must be an int")
             self._number = n
-        
+
         # Logging
         self.logger = logging.getLogger()
         self.logger.setLevel(level=DEBUG_LEVEL)
